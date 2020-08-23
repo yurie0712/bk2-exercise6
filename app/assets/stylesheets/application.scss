@@ -16,7 +16,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-header {
+.nav {
 	color:white;
 }
 
@@ -34,4 +34,8 @@ body {
 }
 #error_explanation {
   color: red;
+}
+search {
+	text-align: center;
+	color:black;
 }

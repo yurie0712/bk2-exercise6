@@ -1,5 +1,10 @@
 class ApplicationController < ActionController::Base
 	before_action :configure_permitted_parameters, if: :devise_controller?
+  def search
+    method = params[:search_method]
+    word = params[:search_word]
+    @books = Book.search(method,word)
+  end
 
   protected
   def after_sign_in_path_for(resource)
